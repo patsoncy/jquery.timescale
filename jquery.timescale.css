@@ -1,0 +1,90 @@
+.ts-axis,.tx-axis *{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ts-axis{
+    /* min-width: 769px !important; */
+    height: 40px;
+    margin: 40px auto 0;
+    border-top: 4px solid #d0d0d0;
+    position: relative;
+}
+.ts-scale{
+    width: 8px;
+    height: 24px;
+    margin: -20px 0 0 0;
+    border-left: 1px solid #d0d0d0;
+    float: left;
+    box-sizing: content-box;
+  /* _zoom:1;
+    *display:inline;*/
+}
+.ts-scale:hover,
+.ts-scale-long:hover{
+    border-left: 2px solid #428BCA;
+}
+.ts-scale.active{
+    border-color: #428BCA;
+}
+.ts-scale-long{
+    height: 32px;
+    margin: -28px 0 0 0;
+    border-left: 1px solid #888;
+    position: relative;
+}
+.ts-scale-long > b{
+    position: absolute;
+    top: 30px;
+    left: -16px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #999;
+    cursor: default;
+}.ts-scale-long:hover > b{
+    left: -17px;
+ }
+
+.ts-scale-end{
+    width: 1px;
+    height: 32px;
+}
+.ts-scale-end:hover{
+    border-left: 2px solid #428BCA;
+    width: 0;
+}
+.ts-point-time{
+    position: absolute;
+    top: -55px;
+    left: 0;
+    background-color: #fff;
+    font-size: 12px;
+    color: #333;
+    padding:5px 10px;
+    -webkit-box-shadow: 0 0 2px 2px #eee;
+    box-shadow: 0 0 2px 2px #eee;
+    border-radius: 3px;
+    opacity: 0.8;
+    border: 1px solid #dbdcdb;
+    display: none;
+    white-space: nowrap;
+}
+.ts-cursor{
+    width: 6px;
+    height: 32px;
+    position: absolute;
+    top: -28px;
+    left: -4px;
+    background-color: #428BCA;
+    display: none;
+    z-index: 10;
+}
+/*.ts-point-time >span{
+    position: absolute;
+    display: block;
+    width: 10px;height: 10px;
+    top: 50%;
+    background-color: #fff;
+    margin-top: -5px;
+    margin-left: -15px;
+}*/
